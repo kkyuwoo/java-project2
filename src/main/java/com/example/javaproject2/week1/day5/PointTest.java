@@ -20,5 +20,9 @@ public class PointTest {
         p3.y = 2;
 
         System.out.printf("x, y가 같은지? %s\n", p3.isSameXy());
+
+        //도전 과제
+        double dP2ToP3 = p2.getDistance(p3);
+        System.out.printf("%f", dP2ToP3);
     }
 }
