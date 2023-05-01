@@ -14,5 +14,22 @@ public class ProgrammersLinkedNumber {
             }
         }
         System.out.println(Integer.parseInt(even) + Integer.parseInt(odd));
+
+        //int만으로 풀이
+        int answer2 = 0;
+        int odd2 = 0;
+        int even2 = 0;
+
+        for(int i=0; i<num_list.length; i++) {
+            if(num_list[i] % 2 ==0) {
+                even2 *= 10;
+                even2 += num_list[i];
+            } else {
+                odd2 *= 10;
+                odd2 += num_list[i];
+            }
+        }
+        answer2 = even2 + odd2;
+        System.out.println(answer2);
     }
 }
